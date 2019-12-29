@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/main_background"
+    tools:context="com.socialapp.heyya.ui.notifications.NotificationsListActivity" >
+
+    <ListView
+        android:id="@+id/activity_notifications_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="8dp">
+    </ListView>
+
+</RelativeLayout>

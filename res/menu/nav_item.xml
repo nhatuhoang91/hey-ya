@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_menu_account"
+            android:icon="@drawable/nav_item_icon_image"
+            android:title="@string/nav_menu_account_string"/>
+      
+        <item
+            android:id="@+id/nav_menu_logout"
+            android:icon="@drawable/nav_item_icon_image"
+            android:title="@string/nav_menu_logout_string"/>
+    </group>
+</menu>

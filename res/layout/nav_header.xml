@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    xmlns:app="http://schemas.android.com/apk/res/com.socialapp.heyya">
+    <ImageView
+        android:id="@+id/nav_header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sale"
+        android:scaleType="centerCrop" />
+    <com.socialapp.heyya.customview.RoundedImageView
+        android:id="@+id/nav_header_avt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/default_avt_image"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        app:corner_radius="20dp" 
+        app:border_width="2dp"
+        app:border_color="@color/gray1"
+        app:mutate_background="true"/>
+    <TextView
+        android:id="@+id/nav_header_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+</FrameLayout>

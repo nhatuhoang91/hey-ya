@@ -1,0 +1,129 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context="com.socialapp.heyya.ui.signupactivity.SignUpActivity">
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"    
+        android:orientation="vertical" 
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:fitsSystemWindows="true"
+        >
+        <android.support.v7.widget.CardView
+             android:id="@+id/signup_cardview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="6dp"
+      app:cardElevation="6dp">
+      <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+      		android:layout_width="match_parent"
+        	android:layout_height="wrap_content">
+       <EditText
+        android:id="@+id/signup_edittext_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/signup_edittext_username_hint"
+        android:textColor="@android:color/black"
+       	android:textColorHint="@android:color/darker_gray"/>
+       </android.support.design.widget.TextInputLayout>
+       
+       <android.support.design.widget.TextInputLayout
+      		android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp">
+       <EditText
+        android:id="@+id/signup_edittext_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/signup_edittext_fullname_hint"
+        android:textColor="@android:color/black"
+       	android:textColorHint="@android:color/darker_gray"/>
+       </android.support.design.widget.TextInputLayout>
+       
+       <android.support.design.widget.TextInputLayout
+      		android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp">
+       <EditText
+        android:id="@+id/signup_edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/signup_edittext_password_hint"
+         android:textColor="@android:color/black"
+       	android:textColorHint="@android:color/darker_gray"
+        />
+       </android.support.design.widget.TextInputLayout>
+       
+        <android.support.design.widget.TextInputLayout
+      		android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp">
+       <EditText
+        android:id="@+id/signup_edittext_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/signup_edittext_repassword_hint"
+        android:textColor="@android:color/black"
+       	android:textColorHint="@android:color/darker_gray"/>
+       </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/signup_cardview">
+        
+            <RelativeLayout 
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:layout_weight="1">
+	        			<android.support.design.widget.FloatingActionButton
+           					android:id="@+id/signup_button_cancel"
+            				android:layout_width="wrap_content"
+            				android:layout_height="wrap_content"
+            				app:fabSize="normal" 
+            				android:src="@drawable/back_image"
+           					android:layout_centerHorizontal="true"
+           					android:onClick="onClickCancel"
+           				/>
+	    		</RelativeLayout>
+	    		<RelativeLayout 
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:layout_weight="1">
+	          			<android.support.design.widget.FloatingActionButton
+             				android:id="@+id/signup_button_next"
+            				android:layout_width="wrap_content"
+            				android:layout_height="wrap_content"
+            				app:fabSize="normal" 
+            				android:src="@drawable/next_image"
+           					android:layout_centerHorizontal="true"
+           					android:onClick="onClickNext"/>
+	    		</RelativeLayout>
+       
+          </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
